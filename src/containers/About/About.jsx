@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { NavigationDots, PageFooter, SocialMedia } from "../../components";
 const About = () => {
 	const myResume = pdf.resume;
+	
 	const [age, setAge] = useState(calculateAge());
 
 	function calculateAge() {
