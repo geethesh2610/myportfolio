@@ -1,0 +1,356 @@
+#about {
+	position: relative;
+}
+
+.app__about {
+	position: relative;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+
+	@media only screen and (max-width: 480px) {
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		padding-top: 6rem;
+		width: 100vw;
+	}
+
+	@media only screen and (min-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+		height: 100vh;
+		padding: 7rem 0 0 0;
+	}
+
+	@media only screen and (min-width: 992px) {
+		margin-top: 0;
+		margin: 2.5rem 0 0 0;
+		flex-direction: row;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		padding: 1rem 8rem;
+		margin: 6rem 0 0 0;
+	}
+}
+
+.app__about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 10;
+
+	img {
+		border-radius: 20px;
+		object-fit: cover;
+		opacity: 0.9;
+
+		-webkit-box-shadow: 0px 0px 4px 1px rgba(115, 115, 115, 1);
+		-moz-box-shadow: 0px 0px 4px 1px rgba(115, 115, 115, 1);
+		box-shadow: 0px 0px 4px 1px rgba(115, 115, 115, 1);
+
+		@media only screen and (max-width: 480px) {
+			width: 98%;
+			height: 98%;
+		}
+
+		@media only screen and (min-width: 768px) {
+			width: 98%;
+			height: 98%;
+		}
+
+		@media only screen and (min-width: 992px) {
+			width: 75%;
+			height: 75%;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 300px;
+		height: 300px;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 600px;
+		height: 500px;
+		margin-bottom: 2rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		padding: 0;
+		width: 40%;
+		height: 100%;
+	}
+}
+
+.app__about-info {
+	.app__about-name {
+		color: var(--black-color);
+		opacity: 0.85;
+
+		@media only screen and (max-width: 480px) {
+			font-size: 20px;
+			line-height: 10px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 28px;
+			line-height: 20px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 28px;
+			line-height: 30px;
+		}
+	}
+
+	.app__about-desig {
+		color: var(--secondary-color);
+		margin-left: 2px;
+		@media only screen and (max-width: 480px) {
+			font-size: 11px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 13px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 13px;
+		}
+	}
+
+	.app__about-info1 {
+		color: #323233;
+		@media only screen and (max-width: 480px) {
+			font-size: 12px;
+			margin-top: 0.8rem;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 14px;
+			margin-top: 1rem;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: 13px;
+			margin-top: 1rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 15px;
+			margin-top: 2rem;
+		}
+	}
+	.app__about-info2 {
+		color: #323233;
+
+		a {
+			text-decoration: none;
+			color: var(--secondary-color);
+		}
+
+		@media only screen and (max-width: 480px) {
+			font-size: 12px;
+			margin-top: 0.8rem;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 14px;
+			margin-top: 1rem;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: 13px;
+			margin-top: 0.75rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 15px;
+			margin-top: 1.5rem;
+		}
+	}
+
+	.app__about-hr {
+		width: 93%;
+		height: 1px;
+		background: var(--black-color);
+		opacity: 0.2;
+
+		@media only screen and (max-width: 480px) {
+			margin: 0.8rem 0;
+		}
+
+		@media only screen and (min-width: 768px) {
+			margin: 1rem 0;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			margin: 2rem 0;
+		}
+	}
+
+	.app__about-details {
+		display: flex;
+		gap: 2rem;
+		.left {
+			font-weight: 500;
+
+			p {
+				margin-bottom: 0.2rem;
+			}
+		}
+
+		.right {
+			color: #474748;
+
+			p {
+				margin-bottom: 0.2rem;
+			}
+		}
+
+		@media only screen and (max-width: 480px) {
+			font-size: 12px;
+			margin-bottom: 1rem;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 12px;
+			margin-bottom: 2rem;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: 13px;
+			margin-bottom: 3rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 15px;
+			margin-bottom: 3rem;
+		}
+	}
+
+	.app__about-resume {
+		background: var(--secondary-color);
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		text-decoration: none;
+		gap: 0.3rem;
+		font-weight: 600;
+		transition: 0.5s ease-in-out;
+		color: var(--white-color);
+
+		display: flex;
+		align-items: center;
+
+		span {
+			display: flex;
+
+			svg {
+				-webkit-transition: 0.6s ease-out;
+				-moz-transition: 0.6s ease-out;
+				transition: 0.6s ease-out;
+				font-size: 18px;
+			}
+		}
+
+		&:hover {
+			background: transparent;
+			color: var(--secondary-color);
+
+			span {
+				svg {
+					-webkit-transform: rotateZ(360deg);
+					-moz-transform: rotateZ(360deg);
+					transform: rotateZ(360deg);
+				}
+			}
+		}
+
+		@media only screen and (max-width: 480px) {
+			padding: 0.6rem 1rem;
+			width: 150px;
+			font-size: 13px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			margin-bottom: 5rem;
+			padding: 0.5rem 1rem;
+			font-size: 13px;
+			width: 150px;
+		}
+
+		@media only screen and (min-width: 992px) {
+			padding: 0.3rem 1rem;
+			width: 145px;
+			margin-bottom: 0;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			padding: 0.5rem 2rem;
+			width: 185px;
+			font-size: 14px;
+			margin-bottom: 0;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 100%;
+		padding: 2rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 100%;
+		padding: 0 7rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: 60%;
+		margin-bottom: 50px;
+	}
+}
+
+.yellow-dot {
+	position: absolute;
+
+	opacity: 0.5;
+
+	@media only screen and (max-width: 480px) {
+		width: 50%;
+		top: 50%;
+		// right: -15%;
+		right: 0;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 30%;
+		top: 30%;
+		// right: -10%;
+		right: 0;
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: 25%;
+		top: 22.5%;
+	}
+}
+
+.violet-dot {
+	position: absolute;
+
+	@media only screen and (max-width: 480px) {
+		width: 80%;
+		bottom: -20%;
+		left: -15%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		left: 0;
+		bottom: -160px;
+	}
+}

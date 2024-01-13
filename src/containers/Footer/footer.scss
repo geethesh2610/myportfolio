@@ -1,0 +1,38 @@
+.app__footer {
+	margin-top: 2rem;
+	background-image: linear-gradient(to top, #313bac, #ebeaeadd);
+
+	width: 100vw;
+
+	text-align: center;
+
+	h2 {
+		padding-top: 1rem;
+		font-size: 2rem;
+		color: var(--secondary-color);
+		@media only screen and (max-width: 480px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	p {
+		font-size: 0.8rem;
+		margin-top: 0.5rem;
+		color: #474747;
+		@media only screen and (max-width: 480px) {
+			font-size: 0.7rem;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		height: 15vh;
+	}
+
+	@media only screen and (min-width: 768px) {
+		height: 10vh;
+	}
+
+	@media only screen and (min-width: 992px) {
+		height: 20vh;
+	}
+}

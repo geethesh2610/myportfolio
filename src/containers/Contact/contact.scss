@@ -1,0 +1,272 @@
+.app__contact {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+
+	@media only screen and (max-width: 480px) {
+		padding: 7rem 0 0;
+		flex-direction: column;
+		height: 100%;
+		width: 100vw;
+	}
+
+	@media only screen and (min-width: 768px) {
+		flex-direction: column;
+		padding: 7rem 0 0;
+		height: 100%;
+	}
+
+	@media only screen and (min-width: 992px) {
+		padding: 3.5rem 0 0;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		padding: 5rem 0 0;
+		height: 100vh;
+	}
+}
+
+.app__contact-heading {
+	color: #413f3f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		color: var(--secondary-color);
+	}
+
+	img {
+		@media only screen and (max-width: 480px) {
+			width: 40px;
+			margin-bottom: 15px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			width: 50px;
+			margin-bottom: 15px;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		font-size: 30px;
+		gap: 0.5rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 38px;
+		gap: 1rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		font-size: 31px;
+		padding: 1.5rem 0 0.5rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 36px;
+	}
+}
+
+.app__contact-info {
+	display: flex;
+
+	@media only screen and (max-width: 480px) {
+		flex-direction: column;
+		width: 90%;
+	}
+
+	@media only screen and (min-width: 768px) {
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		width: 70%;
+		flex-direction: column;
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: 600px;
+		flex-direction: row;
+		gap: 3rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		width: 700px;
+	}
+}
+
+.app__contact-gmail,
+.app__contact-phone {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	flex: 1;
+
+	img {
+		width: 40px;
+	}
+
+	a {
+		font-weight: 600;
+		color: var(--black-color);
+		font-size: 14px;
+		text-decoration: none;
+		@media only screen and (max-width: 480px) {
+			font-size: 14px;
+		}
+
+		@media only screen and (min-width: 768px) {
+			font-size: 18px;
+		}
+
+		@media only screen and (min-width: 992px) {
+			font-size: 13px;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 14px;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 100%;
+		margin-top: 1rem;
+		padding: 1rem 2rem;
+		gap: 2rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 90%;
+		margin-top: 1rem;
+		padding: 1rem 2rem;
+		gap: 2rem;
+	}
+
+	@media only screen and (min-width: 992px) {
+		gap: 0.5rem;
+		margin-top: 1rem;
+		padding: 0.4rem 1.5rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		padding: 0.6rem 2rem;
+	}
+}
+
+.app__contact-gmail {
+	background: #f443364b;
+}
+
+.app__contact-phone {
+	background: #62d8f964;
+}
+
+.app__contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	input,
+	textarea {
+		width: 100%;
+		resize: vertical;
+		background: #d9d9d966;
+		border: none;
+		outline: none;
+
+		font-size: 14px;
+		font-family: "Poppins", sans-serif;
+
+		&::placeholder {
+			font-size: 14px;
+			font-family: "Poppins", sans-serif;
+		}
+
+		@media only screen and (max-width: 480px) {
+			width: 100%;
+			padding: 0.7rem 1.8rem;
+		}
+
+		@media only screen and (min-width: 768px) {
+			width: 90%;
+			padding: 0.7rem 1.8rem;
+		}
+
+		@media only screen and (min-width: 992px) {
+			padding: 0.7rem 1.8rem;
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			padding: 1rem 2rem;
+		}
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 85%;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		align-items: center;
+		gap: 1rem;
+		margin-top: 2rem;
+		width: 70%;
+	}
+
+	@media only screen and (min-width: 992px) {
+		width: 600px;
+		margin-top: 1rem;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		width: 700px;
+		margin-top: 2rem;
+	}
+}
+
+.app__contact-button {
+	border: none;
+	outline: none;
+	background: var(--secondary-color);
+	font-weight: 600;
+	color: var(--white-color);
+	border-radius: 5px;
+	margin-top: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 0.2rem;
+	font-family: inherit;
+	cursor: pointer;
+	transition: 0.5s ease-in-out;
+
+	&:hover {
+		background: transparent;
+		color: var(--secondary-color);
+	}
+
+	@media only screen and (max-width: 480px) {
+		padding: 0.6rem 1.8rem;
+		font-size: 12px;
+		margin-bottom: 2rem;
+	}
+
+	@media only screen and (min-width: 768px) {
+		padding: 0.6rem 1.8rem;
+		font-size: 14px;
+	}
+
+	@media only screen and (min-width: 992px) {
+		padding: 0.6rem 1.8rem;
+		font-size: 12px;
+	}
+
+	@media only screen and (min-width: 1200px) {
+		padding: 0.8rem 2rem;
+		font-size: 15px;
+	}
+}
